@@ -1,0 +1,93 @@
+.slide {
+    display: none;
+}
+.slide-ativo{
+    display: flex;
+    align-items: center;
+    height: 1080px;
+}
+
+.seta-direita {
+    width: 56px;
+    height: 78px;
+    position: fixed;
+    top: 50%;
+    left: 95%;
+    cursor: pointer;
+}
+
+.seta-esquerda {
+    width: 56px;
+    height: 78px;
+    position: fixed;
+    top: 50%;
+    right: 95%;
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+
+.card {
+    margin-left: 180px;
+    background-color: white;
+    width: 35%;
+    border-radius: 10px;
+}
+
+.card .descricao {
+    padding: 84px 59px 83px 60px;
+}
+
+.card .descricao h2 {
+    font-size: 5rem;
+    line-height: 58.59px;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+
+.card .descricao p {
+    line-height: 35px;
+    font-size: 2.0rem;
+    font-weight: 300;
+}
+
+.card .descricao .saiba-mais {
+    display: inline-block;
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.primeiro {
+    background: url(./images/4.jpg) center center no-repeat;
+    background-size: cover;
+}
+.primeiro .saiba-mais{
+    color: #C50000
+}
+.segundo {
+    background: url(./images/1.jpg) center center no-repeat;
+    background-size: cover;
+}
+.segundo .saiba-mais{
+    color: #D9DD10;
+}
+
+.terceiro {
+    background: url(./images/3.jpg) center center no-repeat;
+    background-size: cover;
+}
+.terceiro .saiba-mais{
+    color: #A63A17;
+}
+
+.quarto {
+    background: url(./images/2.jpg) center center no-repeat;
+    background-size: cover;
+}
+.quarto .saiba-mais{
+   color: #10ACDD;
+}
+
+.opacidade{
+    opacity: 20%;
+}
