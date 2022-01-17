@@ -9,29 +9,35 @@ function avancarSlide() {
         item.classList.remove('slide-ativo')
     }
     )
-
-    if (i <= slide.length) {
+    
+    if (i  slide.length) {
         slide[i].classList.add('slide-ativo')
         i++
         setaEsquerda.classList.remove('opacidade')
     }
 
-    if (i >= 4){
+    if (i >= 4) {
         setaDireita.classList.add('opacidade')
     }
 }
 setaDireita.addEventListener('click', avancarSlide)
 
-function retornarSlide(){
+function retornarSlide() {
     slide.forEach(item => {
         item.classList.remove('slide-ativo')
     }
     )
-    
-   if(i >= slide.length){
+
+    if (i <= slide.length) {
+        i--
         slide[i].classList.add('slide-ativo')
-        i-- 
-   }
+    }
+    if (i <= 4) {
+        setaDireita.classList.remove('opacidade')
+    }
+    if(i <= 1){
+        setaEsquerda.classList.add('opacidade')
+    }
 }
-setaEsquerda.addEventListener('click', avancarSlide)
+setaEsquerda.addEventListener('click', retornarSlide)
 

@@ -1,5 +1,6 @@
 .slide {
     display: none;
+    transition: 0.8s ease-in-out;
 }
 .slide-ativo{
     display: flex;
