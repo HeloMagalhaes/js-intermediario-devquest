@@ -1,36 +1,37 @@
-let setaEsquerda = document.getElementsByClassName('seta-esquerda')
-let setaDireita = document.getElementsByClassName('seta-direita')
-let slide = document.getElementsByClassName('slide')
-
+let setaEsquerda = document.getElementById('seta-esquerda')
+let setaDireita = document.getElementById('seta-direita')
+let slide = document.querySelectorAll('.slide')
 let ativarSlide = document.getElementsByClassName('slide-ativo')
 let i = 1;
 
 function avancarSlide() {
-    slide.forEach(function(indice){
-    console.log('slide: ' + indice)
+    slide.forEach(item => {
+        item.classList.remove('slide-ativo')
+    }
+    )
+
+    if (i <= slide.length) {
+        slide[i].classList.add('slide-ativo')
+        i++
+        setaEsquerda.classList.remove('opacidade')
+    }
+
+    if (i >= 4){
+        setaDireita.classList.add('opacidade')
+    }
 }
-)
+setaDireita.addEventListener('click', avancarSlide)
+
+function retornarSlide(){
+    slide.forEach(item => {
+        item.classList.remove('slide-ativo')
+    }
+    )
     
- if (i <= slide.length){
-     slide[i].classList.add('slide-ativo')
-     i++   
- }
- 
- 
- if (i >= 3){
-    setaEsquerda.classList.add('opacidade')
+   if(i >= slide.length){
+        slide[i].classList.add('slide-ativo')
+        i-- 
+   }
 }
-}
-setaDireita.addEventListener('click', avancarSlide()) 
-
-// function retornarSlide() {
-   
-//   if (i <= tamanhoDoSlide){
-//         console.log(slide[i].classList)
-//         slide[i].classList.remove('slide-ativo')
-        
-//     i--
-//     }
-// }
-
+setaEsquerda.addEventListener('click', avancarSlide)
 
