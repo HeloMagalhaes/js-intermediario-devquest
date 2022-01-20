@@ -59,14 +59,14 @@
 }
 
 .primeiro {
-    background: url(./images/4.jpg) center center no-repeat;
+    background: url(/images/4.jpg) center center no-repeat;
     background-size: cover;
 }
 .primeiro .saiba-mais{
     color: #C50000
 }
 .segundo {
-    background: url(./images/1.jpg) center center no-repeat;
+    background: url(/images/1.jpg) center center no-repeat;
     background-size: cover;
 }
 .segundo .saiba-mais{
@@ -74,7 +74,7 @@
 }
 
 .terceiro {
-    background: url(./images/3.jpg) center center no-repeat;
+    background: url(/images/3.jpg) center center no-repeat;
     background-size: cover;
 }
 .terceiro .saiba-mais{
@@ -82,7 +82,7 @@
 }
 
 .quarto {
-    background: url(./images/2.jpg) center center no-repeat;
+    background: url(/images/2.jpg) center center no-repeat;
     background-size: cover;
 }
 .quarto .saiba-mais{

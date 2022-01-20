@@ -10,13 +10,15 @@ function avancarSlide() {
     }
     )
     
-    if (i  slide.length) {
+    if (i <= slide.length) {
+        console.log(slide)
         slide[i].classList.add('slide-ativo')
         i++
         setaEsquerda.classList.remove('opacidade')
     }
-
-    if (i >= 4) {
+    
+    setaEsquerda.classList.remove('opacidade')
+    if (i === 4) {
         setaDireita.classList.add('opacidade')
     }
 }
@@ -35,7 +37,7 @@ function retornarSlide() {
     if (i <= 4) {
         setaDireita.classList.remove('opacidade')
     }
-    if(i <= 1){
+    if(i === 0){
         setaEsquerda.classList.add('opacidade')
     }
 }
