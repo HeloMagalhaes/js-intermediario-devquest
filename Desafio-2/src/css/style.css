@@ -51,7 +51,7 @@ body {
 }
 
 .acordeon .acordeon-item .acordeon-pergunta::after {
-    content: url(./images/seta\ fechada.png);
+    content: url(/Desafio-2/images/seta\ fechada.png);
 }
 
 .acordeon-item .acordeon-resposta {
@@ -63,7 +63,7 @@ body {
 }
 
 .acordeon .acordeon-item.ativo .acordeon-pergunta::after {
-    content: url(./images/seta\ aberta.png);
+    content: url(/Desafio-2/images/seta\ aberta.png);
 }
 
 .acordeon .acordeon-item.ativo .acordeon-resposta {
