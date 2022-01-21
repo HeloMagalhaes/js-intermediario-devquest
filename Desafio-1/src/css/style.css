@@ -2,27 +2,31 @@
     display: none;
     transition: 0.8s ease-in-out;
 }
-.slide-ativo{
+
+.slide-ativo {
     display: flex;
     align-items: center;
     height: 1080px;
 }
 
+.setas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
 .seta-direita {
     width: 56px;
     height: 78px;
-    position: fixed;
-    top: 50%;
-    left: 95%;
     cursor: pointer;
 }
 
 .seta-esquerda {
     width: 56px;
     height: 78px;
-    position: fixed;
-    top: 50%;
-    right: 95%;
     transform: rotate(180deg);
     cursor: pointer;
 }
@@ -30,7 +34,7 @@
 .card {
     margin-left: 180px;
     background-color: white;
-    width: 35%;
+    width: 620px;
     border-radius: 10px;
 }
 
@@ -59,36 +63,142 @@
 }
 
 .primeiro {
-    background: url(/images/4.jpg) center center no-repeat;
+    background: url(/Desafio-1/images/4.jpg) center center no-repeat;
     background-size: cover;
 }
-.primeiro .saiba-mais{
+
+.primeiro .saiba-mais {
     color: #C50000
 }
+
 .segundo {
-    background: url(/images/1.jpg) center center no-repeat;
+    background: url(/Desafio-1/images/1.jpg) center center no-repeat;
     background-size: cover;
 }
-.segundo .saiba-mais{
+
+.segundo .saiba-mais {
     color: #D9DD10;
 }
 
 .terceiro {
-    background: url(/images/3.jpg) center center no-repeat;
+    background: url(/Desafio-1/images/3.jpg) center center no-repeat;
     background-size: cover;
 }
-.terceiro .saiba-mais{
+
+.terceiro .saiba-mais {
     color: #A63A17;
 }
 
 .quarto {
-    background: url(/images/2.jpg) center center no-repeat;
+    background: url(/Desafio-1/images/2.jpg) center center no-repeat;
     background-size: cover;
 }
-.quarto .saiba-mais{
-   color: #10ACDD;
+
+.quarto .saiba-mais {
+    color: #10ACDD;
 }
 
-.opacidade{
+.opacidade {
     opacity: 20%;
+}
+
+
+
+@media (max-width: 986px) {
+    .slide-ativo {
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .card {
+        margin-left: 0px;
+        width: 50%;
+        height: 60%
+    }
+
+    .card .descricao h2 {
+        font-size: 3rem;
+        margin-bottom: 30px;
+    }
+
+    .card .descricao p {
+        line-height: 20px;
+        font-size: 1.5rem;
+    }
+
+    .card .descricao {
+        padding: 20px;
+    }
+
+    .card .descricao .saiba-mais {
+        font-size: 2.0rem;
+    }
+}
+
+
+@media (max-width: 710px) {
+    .seta-direita {
+        width: 30px;
+        height: 48px;
+    }
+
+    .seta-esquerda {
+        width: 30px;
+        height: 48px;
+    }
+
+    .card {
+        width: 60%;
+        height: 50%
+    }
+
+    .card .descricao h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .card .descricao p {
+        font-size: 1rem;
+    }
+
+    .card .descricao .saiba-mais {
+        font-size: 1.5rem;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 485px) {
+    .card {
+        margin-left: 0px;
+        width: 70%;
+        height: 40%;
+    }
+
+    .card .descricao {
+        padding: 20px;
+    }
+
+    .card .descricao h2 {
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+    }
+
+    .card .descricao p {
+        font-size: 0.8rem;
+    }
+
+    .card .descricao .saiba-mais {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    .seta-direita {
+        width: 20px;
+        height: 38px;
+    }
+
+    .seta-esquerda {
+        width: 20px;
+        height: 38px;
+    }
 }
