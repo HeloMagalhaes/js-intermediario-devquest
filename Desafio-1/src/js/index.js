@@ -6,18 +6,18 @@ let i = 1;
 
 function avancarSlide() {
     slide.forEach(item => {
-        item.classList.remove('slide-ativo')
+        if (i !== 4) {
+            item.classList.remove('slide-ativo')
+        }
     }
     )
-    
+
     if (i <= slide.length) {
-        console.log(slide)
         slide[i].classList.add('slide-ativo')
         i++
         setaEsquerda.classList.remove('opacidade')
     }
-    
-    setaEsquerda.classList.remove('opacidade')
+
     if (i === 4) {
         setaDireita.classList.add('opacidade')
     }
@@ -26,7 +26,9 @@ setaDireita.addEventListener('click', avancarSlide)
 
 function retornarSlide() {
     slide.forEach(item => {
-        item.classList.remove('slide-ativo')
+        if (i !== 0) {
+            item.classList.remove('slide-ativo')
+        }
     }
     )
 
@@ -37,7 +39,7 @@ function retornarSlide() {
     if (i <= 4) {
         setaDireita.classList.remove('opacidade')
     }
-    if(i === 0){
+    if (i === 0) {
         setaEsquerda.classList.add('opacidade')
     }
 }

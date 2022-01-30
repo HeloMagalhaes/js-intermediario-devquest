@@ -8,6 +8,13 @@
     align-items: center;
     height: 1080px;
 }
+main{
+    position: relative;
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+}
 
 .setas {
     display: flex;
@@ -22,6 +29,7 @@
     width: 56px;
     height: 78px;
     cursor: pointer;
+    margin-right: 20px;
 }
 
 .seta-esquerda {
@@ -29,6 +37,7 @@
     height: 78px;
     transform: rotate(180deg);
     cursor: pointer;
+    margin-left: 20px;
 }
 
 .card {
@@ -62,36 +71,36 @@
     font-size: 2.5rem;
 }
 
-.primeiro {
-    background: url(/Desafio-1/images/4.jpg) center center no-repeat;
-    background-size: cover;
+.imagem-primeiro-slide {
+    position: absolute;
+    z-index: -1;
 }
 
-.primeiro .saiba-mais {
+ .descricao .saiba-mais {
     color: #C50000
 }
 
-.segundo {
-    background: url(/Desafio-1/images/1.jpg) center center no-repeat;
-    background-size: cover;
+.imagem-segundo-slide {
+    position: absolute;
+    z-index: -1;
 }
 
 .segundo .saiba-mais {
     color: #D9DD10;
 }
 
-.terceiro {
-    background: url(/Desafio-1/images/3.jpg) center center no-repeat;
-    background-size: cover;
+.imagem-terceiro-slide {
+    position: absolute;
+    z-index: -1;
 }
 
 .terceiro .saiba-mais {
     color: #A63A17;
 }
 
-.quarto {
-    background: url(/Desafio-1/images/2.jpg) center center no-repeat;
-    background-size: cover;
+.imagem-quarto-slide {
+    position: absolute;
+    z-index: -1;
 }
 
 .quarto .saiba-mais {
@@ -101,7 +110,6 @@
 .opacidade {
     opacity: 20%;
 }
-
 
 
 @media (max-width: 986px) {
